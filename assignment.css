@@ -1,79 +1,54 @@
-/* This removes the default margin from every element so we control the space between elements */
-* {
-    margin: 0;
-}
-
 body {
-    background-color: rgb(40, 40, 40);
-    color: white;
-}
-
-.header {
-    background-color: orange;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding-left: 20px;
-    z-index: 10;
-    /* Use position so the header will always be fixed to the top of the page */
-    
-}
-
-.main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: maroon;
 }
 
 .nav {
-    background-color: rgb(255, 196, 86);
-    width: fit-content;
-    padding: 40px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    /* Use position so the nav will be on the right, halfway down, but still scroll with the page */
-    
+    background-color: rgb(195, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
 }
 
 .nav a {
-    font-size: 20px;
-    color:white;
+    color: white;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 500ms;
+    position: relative;
+    top: 0px;
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    background-color: maroon;
+    top: -4px;
 }
 
-.ad {
-    background-color: white;
-    color: black;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Use position so that the ad will stick under the header when the page is scrolled */
-    
+h1 {
+    text-align: center;
+    color: white;
 }
 
-.products {
-    height: 80vh;
+.gallery {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(80, 80, 80);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+img {
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 1s ease;
+}
+
+img:hover {
+    transform: scale(1.2) translateY(-20px) rotate(10deg);
 }
