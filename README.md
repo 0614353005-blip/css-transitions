@@ -1,12 +1,14 @@
 # css-transition
 
 ## Learning Target
-- I am learning how to use the CSS ```position``` property to control how elements are positioned
+- I am reviewing box model properties, flex containers, and hover selectors 
+- I am learning how to use the CSS transition and transform properties to automatically animate between two states
 
 ## Success Criteria
-- I can set ```position``` to ```absolute```, ```relative```, ```fixed```, and ```sticky```
-- I can identify the differences between ```static```, ```absolute```, ```relative```, ```fixed```, and ```sticky```
-- I can use ```top```, ```left```, ```bottom```, and ```right``` with ```position``` properties to position an element
+- I can set initial and :hover or :active properties for an element in CSS (colors, border, position, etc.)
+- I can use the transition property to animate the transition to the hovered state
+- I can use the transform property to scale, rotate, or translate an element
+
 
 
 ## Get started
@@ -14,17 +16,19 @@
 2. Follow directions below
 
 ## Basic Page Styles
-Use box model and flex properties to style the page so it looks like the screenshots below.
+Use **box model** and **flex** properties to style the page so it looks like the screenshots below.
 1. Follow along with my example for the nav
 2. You complete the gallery
 
 ### Box Model Properties
 ```css
-width
-height
-padding
-border
-margin
+selector {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border: 2px solid red;
+    margin: 20px;
+}
 ```
 
 ### Flex Container Properties
