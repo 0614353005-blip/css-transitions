@@ -49,6 +49,15 @@ container {
 ![](assets/screenshot2.png)
 
 ## Transitions
+```css
+selector {
+    transition: property duration timing-function;
+}
+
+a {
+    transition: background-color 1s ease;
+}
+```
 1. Follow my example to add a transition for the a tags in the header to change background color and move up.  
 ![](assets/screenshot3.png)
 2. Follow my example to add transistions for the gallery images to zoom-in and rotate.  
