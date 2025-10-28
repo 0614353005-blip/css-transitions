@@ -58,6 +58,12 @@ a {
     transition: background-color 1s ease;
 }
 ```
+## Transform property
+```css
+selector {
+    transform: translate(x, y) | scale(%) | rotate(deg);
+}
+```
 1. Follow my example to add a transition for the a tags in the header to change background color and move up.  
 ![](assets/screenshot3.png)
 2. Follow my example to add transistions for the gallery images to zoom-in and rotate.  
