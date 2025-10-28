@@ -1,0 +1,52 @@
+body {
+    background-color:rgb(255, 202, 247);
+   
+}
+
+.nav {
+    background-color: rgb(255, 191, 208);
+    height:50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    color:aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    position: relative;
+    top: 0px;
+    transition:500ms
+}
+
+.nav a:hover {
+     background-color:deeppink;
+     top: -5px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 254, 252);
+}
+
+.gallery {
+   display:flex;
+   flex-wrap: wrap;
+   justify-items: space-around;
+   align-items: center;
+}
+
+.gallery img {
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    transition: 300ms;
+}
+
+.gallery img:hover {
+    transform: scale(120%) rotate(10deg) translate(30px);
+
+}
